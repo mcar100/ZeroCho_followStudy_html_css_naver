@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+/* Cascading Style Sheet - 기본적으로 html에 적용된 속성이 있어도 css가 덮어씀 */
+/* 선택자(selector) - 태그를 선택 */
+.center-align{
+    margin: 0 auto;
+    width: 1080px; /* px: 상대적 단위 - 개인 모니터 해상도에 맞게 */
+
+}
+
+/* header태그 영역 */
+.center-align h1{
+    width: 222px;
+    height: 52px;
+    display: inline-block;
+    background-image: url('./네이버로고.png');
+    background-size: 444px 439px;
+    background-repeat: no-repeat;
+    background-position: 0 -158px;
+    position: relative;
+    top: 1px;
+
+}
+
+.center-align a{
+    text-decoration: none;
+    vertical-align: middle;
+}
+/*
+같은 표현: 자식 선택자
+#header-search > h1{
+}
+*/
+
+#header-search fieldset{
+    margin: 20px 0px 10px 20px;
+    width: 582px;
+    height: 40px;
+    display: inline-block;
+    border: 3px solid #03cf5d;
+    vertical-align: middle;
+    padding: 0;
+    position: relative;
+}
+
+#header-search > fieldset > input{
+    border: none;
+    padding: 0;
+    outline: none;
+    vertical-align: middle;
+}
+
+#header-search > fieldset > button{
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 35px;
+    height: 36px;
+    background-color:#03cf5d;
+    background-image: url(./네이버로고.png);
+    background-repeat: no-repeat;
+    background-position: -416px -205px;
+    background-size: 444px 439px;
+    vertical-align: middle;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+/* nav 태그 영역 */
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav li{
+    display: inline-block;
+}
